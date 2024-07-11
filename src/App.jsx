@@ -27,7 +27,7 @@ function InputBox({ updateQuery, updateDisplay }) {
   return (
     <section className="box input-box">
       <img
-        src="/dictionary_image.jpg"
+        src="./dictionary_image.png"
         alt="Dictionary Image"
         className="input-box-image"
       />
