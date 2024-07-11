@@ -10,7 +10,7 @@ body {
 
 .container {
     min-height: 100vh;
-    background-color: #f0ffff; /* azure */
+    background-image: linear-gradient(60deg, #aaa, #eee);
     padding: 1em;
     display: flex;
     flex-direction: row;
