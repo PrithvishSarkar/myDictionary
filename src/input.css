@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    background-image: linear-gradient(60deg, #aaa, #eee);
+}
+
+.input-box {
+    box-shadow: -0.5em 0.5em 0.5em #aaa;
+}
+
+.input-box-image {
+    border-radius: 40% 60% 30% 70% / 70% 30% 70% 30%;
+}
+
+.output-box {
+    box-shadow: 0.5em 0.5em 0.5em #aaa;
+}
+
+.output-box-meaning {
+    border-image-source: linear-gradient(90deg, #eee 0%, #aaa 50%, #eee 100%);
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+}
