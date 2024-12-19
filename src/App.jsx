@@ -1,15 +1,20 @@
 import "./tailwind.css";
+import { FaHeart } from "react-icons/fa6";
+
 import { useState, useEffect } from "react";
 
 function Container({ query, updateQuery }) {
   const [outputDisplay, setOutputDisplay] = useState(false);
   return (
-    <section
-      className="min-h-[100vh] min-w-[100%] p-4
+    <section className="min-h-[100vh] flex flex-col items-stretch justify-center">
+      <div
+        className="flex-grow min-h-full min-w-full p-4
     flex flex-col items-center justify-evenly gap-4 lg:flex-row container"
-    >
-      <InputBox updateQuery={updateQuery} updateDisplay={setOutputDisplay} />
-      {outputDisplay && <OutputBox query={query} />}
+      >
+        <InputBox updateQuery={updateQuery} updateDisplay={setOutputDisplay} />
+        {outputDisplay && <OutputBox query={query} />}
+      </div>
+      <Footer />
     </section>
   );
 }
@@ -146,6 +151,19 @@ function OutputBox({ query }) {
         Learn More
       </button>
     </section>
+  );
+}
+
+function Footer() {
+  return (
+    <div
+      className="container text-sm min-w-full p-1
+    flex flex-row items-center justify-center gap-2"
+    >
+      <p className="text-neutral-800 font-semibold">Made with </p>
+      <p className="text-red-700"><FaHeart /></p>
+      <p className="text-neutral-800 font-semibold"> by Prithvish Sarkar</p>
+    </div>
   );
 }
 
