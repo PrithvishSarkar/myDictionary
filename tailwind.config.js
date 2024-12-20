@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/App.jsx"],
+  content: ["./src/App.jsx", "./components/*.jsx"],
   theme: {
     extend: {
       animation: {circle: "circle 1s linear infinite"},
