@@ -83,8 +83,15 @@ The Dictionary Application is a user-friendly tool designed to help users look u
 
 - **Clone the Repository**: `git clone https://github.com/PrithvishSarkar/myDictionary.git`
 - **Navigate to the Project Directory**: `cd myDictionary`
-- **Install Dependencies**: `npm install`
-- **Start the Development Server**: `npm run dev`
+- **Setup Frontend**
+  - **Navigate to Frontend directory**: `cd Frontend`
+  - **Install Dependencies**: `npm install`
+  - **Start the Frontend Development Server**: `npm run dev`
+
+- **Setup Backend**
+  -**Navigate to Backend directory**: `cd ../Backend`
+  -**Install Dependencies**: `npm install`
+  -**Start the Backend Development Server**: `npm run dev`
 
 ## How to use the Dictionary Application?
 
