@@ -20,7 +20,7 @@ function InputBox({
   // This function runs when the user hits the 'Enter' key
   const handleKeyDown = async (e) => {
     if (e.key === "Enter") {
-      if (userInput === "") {
+      if (userInput.trim() === "") {
         updateShowAlertModal(true);
         setTimeout(() => updateShowAlertModal(false), 3000);
       } else {
